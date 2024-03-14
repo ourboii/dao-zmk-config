@@ -31,10 +31,10 @@
 
         default_layer {
             bindings = <
-&mt TAB RBKT  &kp Q  &kp W  &kp E      &kp R  &kp T      &kp Y          &kp U  &kp I                           &kp O    &kp P     &mt ESCAPE LEFT_BRACKET
+&mt TAB RBKT  &kp Q  &kp W  &kp E      &kp R  &kp T      &kp Y          &kp U  &kp I                           &kp O    &kp P     &kp LEFT_BRACKET
 &kp CAPSLOCK  &kp A  &kp S  &kp D      &kp F  &kp G      &kp H          &kp J  &kp K                           &kp L    &kp SEMI  &kp APOSTROPHE
 &kp LSHIFT    &kp Z  &kp X  &kp C      &kp V  &kp B      &kp N          &kp M  &kp COMMA                       &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                            &kp LCTRL  &to 2  &kp SPACE  &kp BACKSPACE  &to 1  &mt RIGHT_ALT NON_US_BACKSLASH
+                            &kp LCTRL  &mo 2  &kp SPACE  &kp BACKSPACE  &mo 1  &mt RIGHT_ALT NON_US_BACKSLASH
             >;
         };
 
@@ -43,16 +43,16 @@
 &kp PLUS   &kp EXCL  &kp AT  &kp HASH   &kp DLLR      &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &kp UNDER
 &kp EQUAL  &kp N1    &kp N2  &kp N3     &kp N4        &kp N5     &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp F1     &kp F2    &kp F3  &kp F4     &kp F5        &kp F6     &kp F7     &kp F8    &kp F9     &kp F10   &kp F11   &kp F12
-                             &kp GRAVE  &kp LEFT_ALT  &kp TAB    &kp RCTRL  &to 0     &kp TILDE
+                             &kp GRAVE  &kp LEFT_ALT  &kp TAB    &kp RCTRL  &trans    &kp TILDE
             >;
         };
 
         raise_layer {
             bindings = <
-&kp KP_NUMLOCK  &kp KP_SLASH     &kp KP_N7  &kp KP_N8    &kp KP_N9  &kp KP_MINUS   &none     &none     &none       &none      &none  &kp PRINTSCREEN
-&none           &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5    &kp KP_N6  &kp KP_PLUS    &none     &none     &kp UP      &none      &none  &kp DELETE
-&none           &kp KP_N0        &kp KP_N1  &kp KP_N2    &kp KP_N3  &kp KP_DOT     &none     &kp LEFT  &kp DOWN    &kp RIGHT  &none  &none
-                                            &lt 3 ENTER  &to 0      &kp BACKSPACE  &kp LWIN  &none     &kp ESCAPE
+&kp KP_NUMLOCK  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS   &none     &none        &none       &none      &none  &kp PRINTSCREEN
+&none           &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS    &none     &none        &kp UP      &none      &none  &kp DELETE
+&none           &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT     &none     &kp LEFT     &kp DOWN    &kp RIGHT  &none  &none
+                                            &trans     &trans     &kp BACKSPACE  &kp LWIN  &lt 3 ENTER  &kp ESCAPE
             >;
         };
 
@@ -61,7 +61,7 @@
 &bootloader  &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
 &sys_reset   &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
-                                         &trans        &none         &none         &none         &none         &none
+                                         &none         &none         &none         &none         &trans        &none
             >;
         };
     };
