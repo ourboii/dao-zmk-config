@@ -34,34 +34,34 @@
 &kp RIGHT_BRACKET  &kp Q  &kp W  &kp E      &kp R      &kp T  &kp Y  &kp U          &kp I          &kp O    &kp P     &kp LEFT_BRACKET
 &kp TAB            &kp A  &kp S  &kp D      &kp F      &kp G  &kp H  &kp J          &kp K          &kp L    &kp SEMI  &kp APOSTROPHE
 &kp LSHIFT         &kp Z  &kp X  &kp C      &kp V      &kp B  &kp N  &kp M          &kp COMMA      &kp DOT  &kp FSLH  &mt RIGHT_SHIFT ENTER
-                                 &kp LCTRL  &kp SPACE  &mo 2  &mo 1  &kp BACKSPACE  &kp RIGHT_ALT
+                                 &kp LCTRL  &kp SPACE  &mo 1  &mo 2  &kp BACKSPACE  &kp RIGHT_ALT
             >;
         };
 
-        lower_layer {
+        NumbersAndCharachters {
             bindings = <
-&kp PLUS   &kp EXCL  &kp AT  &kp HASH   &kp DLLR              &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &kp UNDER
-&kp EQUAL  &kp N1    &kp N2  &kp N3     &kp N4                &kp N5     &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp F1     &kp F2    &kp F3  &kp F4     &kp F5                &kp F6     &kp F7     &kp F8    &kp F9     &kp F10   &kp F11   &kp F12
-                             &kp GRAVE  &kp NON_US_BACKSLASH  &kp PIPE   &trans     &kp CAPS  &kp TILDE
+&kp PLUS   &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS   &kp STAR       &kp LPAR  &kp RPAR  &kp UNDER
+&kp EQUAL  &kp N1    &kp N2  &kp N3     &kp N4    &kp N5     &kp N6     &kp N7     &kp N8         &kp N9    &kp N0    &kp MINUS
+&kp F1     &kp F2    &kp F3  &kp F4     &kp F5    &kp F6     &kp F7     &kp F8     &kp F9         &kp F10   &kp F11   &kp F12
+                             &kp TILDE  &kp PIPE  &trans     &mo 3      &kp GRAVE  &kp BACKSLASH
             >;
         };
 
-        raise_layer {
+        Numpad {
             bindings = <
-&kp KP_NUMLOCK  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &none     &none     &none       &none      &none  &kp PRINTSCREEN
-&none           &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &none     &none     &kp UP      &none      &none  &kp DELETE
-&none           &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &none     &kp LEFT  &kp DOWN    &kp RIGHT  &none  &none
-                                            &none      &none      &trans        &kp LWIN  &mo 3     &kp ESCAPE
+&none  &none  &none  &none    &none         &none         &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_N8  &kp KP_N9        &kp KP_SUBTRACT  &kp KP_NUMLOCK
+&none  &none  &none  &none    &none         &none         &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_N5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp BACKSPACE
+&none  &none  &none  &none    &none         &none         &kp KP_N0        &kp KP_N1        &kp KP_N2  &kp KP_N3        &kp KP_DOT       &kp ENTER
+                     &kp ESC  &kp LEFT_WIN  &kp CAPSLOCK  &trans           &none            &none
             >;
         };
 
-        adjust_layer {
+        SystemAndArrows {
             bindings = <
-&bootloader  &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-&sys_reset   &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
-                                         &none         &none         &none         &none         &trans        &none
+&bootloader  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &sys_reset  &sys_reset  &bt BT_SEL 2  &bt BT_SEL 1    &bt BT_SEL 0  &bt BT_CLR  &bootloader
+&none        &none       &none         &none         &none         &none       &none       &none         &kp UP_ARROW    &none         &none       &none
+&none        &none       &none         &none         &none         &none       &none       &kp LEFT      &kp DOWN_ARROW  &kp RIGHT     &none       &none
+                                       &none         &none         &none       &trans      &none         &none
             >;
         };
     };
