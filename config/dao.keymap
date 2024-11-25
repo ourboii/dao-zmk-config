@@ -49,10 +49,10 @@
 
         Numpad {
             bindings = <
-&kp                &kp              &kp F13  &kp F16  &kp F19       &kp F22       &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_N8  &kp KP_N9        &kp KP_SUBTRACT  &kp KP_NUMLOCK
+&none              &none            &kp F13  &kp F16  &kp F19       &kp F22       &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_N8  &kp KP_N9        &kp KP_SUBTRACT  &kp KP_NUMLOCK
 &kp K_SCROLL_UP    &kp PRINTSCREEN  &kp F14  &kp F17  &kp F20       &kp F23       &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_N5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp BACKSPACE
 &kp K_SCROLL_DOWN  &kp DELETE       &kp F15  &kp F18  &kp F21       &kp F24       &kp KP_N0        &kp KP_N1        &kp KP_N2  &kp KP_N3        &kp KP_DOT       &kp ENTER
-                                             &kp ESC  &kp LEFT_WIN  &kp CAPSLOCK  &trans           &kp              &kp
+                                             &kp ESC  &kp LEFT_WIN  &kp CAPSLOCK  &trans           &none            &none
             >;
         };
 
